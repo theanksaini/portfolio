@@ -1,0 +1,29 @@
+.WorkEx-content {
+  opacity: 1;
+}
+.WorkEx {
+  height: 100vh;
+  background-image: url("D:\Desktop\test2..jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-blend-mode: screen;
+  /* opacity: 0.5; */
+}
+
+.WorkEx h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.WorkEx p {
+  font-size: 1.2em;
+  padding: 20px;
+  color: white;
+  opacity: 1;
+}

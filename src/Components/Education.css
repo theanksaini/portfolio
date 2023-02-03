@@ -1,0 +1,28 @@
+.education-content {
+  opacity: 1;
+}
+.education {
+  height: 100vh;
+  background-image: url("http://bnducollege.org/images/uni_image.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-blend-mode: screen;
+  /* opacity: 0.5; */
+}
+
+.education h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.education p {
+  font-size: 1.2em;
+  padding: 20px;
+  color: white;
+  opacity: 1;
+}

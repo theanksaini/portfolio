@@ -1,0 +1,41 @@
+.Skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: top;
+  margin: 500px 0;
+}
+
+.Skills h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin: 0 20px;
+}
+
+.Skill-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Skill-bar {
+  height: 10px;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.Skill-level {
+  height: 100%;
+  background-color: blue;
+  width: 70%;
+}

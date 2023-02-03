@@ -1,22 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Education from "./Components/Education.js";
+import WorkEx from "./Components/WorkEx.js";
+import Skills from "./Components/Skills.js";
+import Contact from "./Components/Contact.js";
+
+const constant = "Change is the only constant!⚡";
 
 function App() {
+  const [showComponent, setShowComponent] = useState("Education");
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <p
+          onClick={() =>
+            setShowComponent(
+              showComponent === "Education"
+                ? "WorkEx"
+                : showComponent === "WorkEx"
+                ? "Skills"
+                : showComponent === "Skills"
+                ? "Contact"
+                : "Education"
+            )
+          }
         >
-          Learn React
-        </a>
+          {constant}
+        </p>
+        {showComponent === "Education" ? (
+          <Education />
+        ) : showComponent === "WorkEx" ? (
+          <WorkEx />
+        ) : showComponent === "Skills" ? (
+          <Skills />
+        ) : (
+          <Contact />
+        )}
       </header>
     </div>
   );
